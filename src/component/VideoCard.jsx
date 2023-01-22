@@ -23,11 +23,11 @@ const VideoCard = ({
         borderRadius: 0,
       }}
     >
-      <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY`}>
+      <Link to={videoId ? `/video/${videoId}` : `demoVideoUrl`}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: '380px', height: '180px' }}
+          sx={{ width: 380, height: 180 }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px' }}>
@@ -51,7 +51,6 @@ const VideoCard = ({
           </Typography>
         </Link>
       </CardContent>
-      nt
     </Card>
   );
 };

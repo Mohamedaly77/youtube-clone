@@ -11,13 +11,13 @@ const ChannelDetail = () => {
   const [channelDetail, setChannelDetail] = useState(null);
   const [videos, setVideos] = useState([]);
 
-  console.log(videos);
+  console.log(channelDetail);
 
   useEffect(() => {
     fetchFromAPI(`channels?part=snippet&id=${id}`).then((data) =>
       setChannelDetail(data?.items['0'])
     );
-    fetchFromAPI(`search?channelId=${id}&part=snippet%2Cid&order=date`).then(
+    fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`).then(
       (data) => setVideos(data?.items)
     );
   }, [id]);

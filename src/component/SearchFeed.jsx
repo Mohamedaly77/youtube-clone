@@ -10,13 +10,10 @@ const SearchFeed = () => {
   const { searchTerm } = useParams();
 
   useEffect(() => {
-    setVideos(null);
-
     fetchFromAPI(`search?part=snippet&q=${searchTerm}`).then((data) =>
       setVideos(data.items)
     );
   }, [searchTerm]);
-
   return (
     <Box p={2} minHeight="95vh">
       <Typography
