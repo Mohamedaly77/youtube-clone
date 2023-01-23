@@ -1,7 +1,7 @@
 {
-  "homepage": "https://mohamedaly77.github.io/",
+  "homepage": "https://mohamedaly77.github.io/youtube-clone",
   "name": "youtube",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
